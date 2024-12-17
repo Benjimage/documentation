@@ -1,0 +1,31 @@
+/********************/
+/*  General rules   */
+/********************/
+@import 'reset';
+@import 'texts';
+
+/****************/
+/*  Navigation  */
+/****************/
+
+@import 'navigation/header';
+@import 'navigation/navigation';
+@import 'navigation/footer';
+@import 'navigation/menus';
+
+/********************/
+/*      Pages       */
+/********************/
+
+@import 'pages/pages';
+@import 'pages/front-page';
+@import 'pages/search-form';
+@import 'pages/resources';
+/********************/
+/*    Animations    */
+/********************/
+@import 'animation/keyframes';
+/********************/
+/* Special features */
+/********************/
+/* @import ''; */

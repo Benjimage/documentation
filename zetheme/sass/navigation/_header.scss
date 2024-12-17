@@ -1,0 +1,31 @@
+.header {
+    height: 80px;
+    width: 100vw;
+    padding-inline: 30px;
+    border-bottom: 1px solid #0000001b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & img {
+        opacity: 0.6;
+    }
+    & a {
+        display: flex;
+        align-items: center;
+        font-family: Roboto, sans-serif;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #000000a9;
+        & h2 {
+           padding: 0 0 0 10px;
+           text-shadow: 10px 8px #0000001b;
+        }
+        }
+        
+    
+}
+.menu {
+    width: 36vw;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,52 @@
+html {
+    font-family: Roboto;
+}
+h1,h2,h3,h4,h5,h6,li,p {
+    color: #666666;
+}
+p:first-of-type {
+    padding-top: 20px;
+
+}
+p,
+li {
+    line-height: 1.8;
+}
+.indent,
+.post-categories {
+    padding-left: 20px;
+}
+.deco-none {
+    text-decoration: none;
+}
+.trans {
+    color: #00000029;
+    font-size: 1rem;
+}
+.italic {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.portfolio {
+    text-decoration: none;
+    & >.exerpt:hover{
+        transform: translateY(2px);
+        box-shadow: 1px 1px 3px #0000001b;
+        border-bottom: 1px solid #00000038;
+        border-right: 1px solid #00000038;
+    }
+    & >.exerpt:hover > h2{
+        color: #222;
+    }
+}
+.section-title {
+    text-align: center;
+    padding: 40px;
+}
+.description  p{
+    font-size: 12px;
+}
+.message {
+    font-size: 48px;
+    padding: 20px 0;
+}

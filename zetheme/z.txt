@@ -1,0 +1,201 @@
+<?php  get_header()?>
+
+<?php  get_footer()?>
+
+<div class="modal">
+    <div class="search-form">
+    <div class="close">&#10539;</div>
+        <p>Tapez votre recherche</p>    
+        <?php get_search_form(); ?>
+
+    </div>
+</div>
+    <?php get_template_part('parts/resources');?>
+    
+const modal = document.getElementsByClassName('modal');
+console.log(modal);
+
+const getIt = document.querySelector('.search'); 
+console.log(getIt);
+getIt.addEventListener('click', changeColor);
+
+function changeColor() {
+  getIt.style.color = 'blue';
+}
+
+/* var modal = document.getElementById("myModal");
+console.log(modal); */
+// Get the button that opens the modal
+/* var btn = document.getElementById("mySearch"); */
+
+// Get the <span> element that closes the modal
+const zeclose = document.getElementsByClassName("close");
+console.log(zeclose);
+// When the user clicks on the button, open the modal
+getIt.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+zeclose.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+
+*
+ * At the installation time, database tables are created with the specified prefix.
+ * Changing this value after WordPress is installed will make your site think
+ * it has not been installed.
+ *
+ * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/#table-prefix
+ 
+ <div class="overlay">
+    <div class="container">
+        <h2>Ressources sur la hiérarchie des templates</h2>
+        <?php
+        $adresses = array (
+            'Grafikart : La hiérarchie des templates' => 'https://www.youtube.com/watch?v=CFbYbKu5dTg',
+            'Template Hierarchy – Theme Handbook ' => 'https://developer.wordpress.org/themes/basics/template-hierarchy/',
+            'Guide de hiérarchie des modèles WordPress (édition 2024)' => 'https://kinsta.com/fr/blog/hierarchie-des-modeles-wordpress/',
+            'WordPress template hierarchy : Un guide pas à pas et détaillé'=> 'https://oscar-black.com/blog/wordpress/wordpress-template-hierarchy/',
+            'Le Template Hierarchy Capitaine WP'=> 'https://capitainewp.io/formations/developper-theme-wordpress/template-hierarchy/',
+            'Template hierarchy'=> 'https://www.youtube.com/results?search_query=template+hierarchy',
+        );
+        foreach ($adresses as $adresse => $link) {
+            echo '<div class="links-box">';
+        ?>
+            <a href="<?php echo $link  ?>" target="_blank"><?php echo $adresse ?> </a>
+        <?php
+            echo '</div>';
+          }
+          echo '<div class="links-box">';
+            echo'<p>Autres ressources</p>';
+          echo '</div>';
+        ?>
+    </div>
+</div>
+
+
+ <p>
+                        <strong>Avis :</strong>
+                        <?php echo get_post_meta(get_the_ID(), 'avis', true); ?>
+                    </p>
+
+                    <p>
+                        <strong>Note :</strong>
+                        <?php echo get_post_meta(get_the_ID(), 'note', true); ?> / 10
+                    </p>
+
+                    <div class="plus-moins">
+                        <div class="plus">
+                            <?php echo get_post_meta(get_the_ID(), 'plus', true); ?>
+                        </div>
+                        <div class="plus">
+                            <?php echo get_post_meta(get_the_ID(), 'moins', true); ?>
+                        </div>
+                    </div>
+                    <p>
+/********************/
+/*      SEARCH      */
+/********************/  
+const signal = document.querySelector('.trans')
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".seek");
+
+function searchDelay() {
+  setTimeout(start,1000)
+}
+
+trigger.onclick = () => {
+  modal.style.display = "flex";
+}
+if (signal.innerHTML= 'Error 404') {
+  window.onload = () => {
+    modal.style.display = "flex";
+  }
+} 
+window.onclick = (event) =>{
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+} 
+/********************/
+/*    RESOURCES     */
+/********************/  
+
+/********************/
+/*      SEARCH      */
+/********************/  
+const signal = document.querySelector('.trans')
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".seek");
+
+const inputRequired = document.querySelector("#s");
+inputRequired.setAttribute('required','true')
+
+/* function searchDelay() {
+  setTimeout(searchDisplay,1200);
+
+  function searchDisplay(){
+    modal.style.display = "flex";
+  }
+} */
+  function searchDelay() {
+    setTimeout(() => {
+      modal.style.display = "flex"
+    },1200);
+  
+    /* function searchDisplay(){
+      modal.style.display = "flex";
+    } */
+  }
+trigger.onclick = () => {
+  modal.style.display = "flex";
+}
+if (signal.innerHTML=== 'Error 404') {
+  window.onload = () => {
+    searchDelay()
+  }
+} 
+window.onclick = (event) =>{
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+} 
+/********************/
+/*    RESOURCES     */
+/********************/  
+
+PAGE.PHP :
+<?php get_header(); ?>
+<main>
+    <h2 class="trans">page</h2>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+            <h1><?php the_title(); ?></h1>
+
+            <?php the_content(); ?>
+
+    <?php endwhile;
+    endif; ?>
+</main>
+
+<?php get_footer(); ?>
+
+ 'type-projet' => 'ecriture',
+                'tax_query' => array (
+                    'taxonomy' => 'type-projet',
+                    'field' => 'slug',
+                    'terms' => get_the_term_list( 189, 'portfolio' ), 
+                )
+
+<video id="video" controls>
+  <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/explication_ajax_filtre_mota.mp4'; ?>" type="video/mp4">
+    votre navigateur ne prend pas en charge la vidéo
+</video>

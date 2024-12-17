@@ -1,0 +1,26 @@
+.banner {
+    width: 100vw;
+    background:  #afa3f3;
+    display: flex;
+    justify-content: center;
+}
+section {
+    padding-bottom: 60px;
+}
+.front-page {
+    height: 60px;
+    width: 100vw;
+    padding-inline: 30px;
+    border-bottom: 1px solid #0000001b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h1 {
+        color: #00000011 /*red */;
+        position: relative;
+        left: -440px;
+    }
+}
+.test {
+    background-color: aqua;
+}
