@@ -312,6 +312,17 @@ section:first-of-type {
   margin-top: 40px;
 }
 
+.note {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #dfd9d9;
+  font-style: italic;
+}
+
+.paragraph {
+  margin: 40px 0;
+}
+
 .banner {
   width: 100vw;
   background: #afa3f3;
